@@ -1,0 +1,14 @@
+Created workspace as in indistrial organizational manner
+created global environment 
+downloaded csv file from kaggle then organize it in dataset folder
+then apply pandas to manage that data (Data which is raw already in commas separated columns) get converted in dataframe
+then we read data in "data" variable 
+Understanding of Data before giving to model its most imp step : we understand data with help of 
+| Question          | Why Important        |
+| ----------------- | -------------------- |
+| How many rows?    | Dataset size         |
+| How many columns? | Number of features   |
+| Column names?     | Understand features  |
+| Data types?       | ML compatibility     |
+| Missing values?   | Data cleaning needed |
+| Example rows?     | Understand real data |
