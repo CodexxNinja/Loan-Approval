@@ -12,3 +12,10 @@ Understanding of Data before giving to model its most imp step : we understand d
 | Data types?       | ML compatibility     |
 | Missing values?   | Data cleaning needed |
 | Example rows?     | Understand real data |
+we working on supervised machine learning it means that it has input & output labels so we separate loan status from all features 
+Here we apply sk model input features includes 4 objects(text\string) so we encode them in label coding 
+then we apply train test split method (Divide dataset in two subnets train / test by shuffling to give unbiased answer)
+Here we apply feature scaling for normalize(convert huge numbers of values in tiny values) feature this helps in ML optimization
+we start training model using Logistic algorithm 
+then start prediction later we get result of 89% accuracy 
+for confirming is it not overfitting we compare with confusion matrix(correct\wrong prediction) , classification report(Precision\Recall\F1) , correct prediction , incorrect prediction.
