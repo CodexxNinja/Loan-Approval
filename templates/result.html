@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0c;
+            --text-light: #ffffff;
+            --text-muted: #8b8b9f;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --theme-color: {{ status_color }}; /* Uses the color from FastAPI */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            perspective: 1200px; /* Required for 3D effect */
+        }
+
+        /* Ambient Glowing Background */
+        .ambient-glow {
+            position: absolute;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, var(--theme-color) 0%, transparent 60%);
+            opacity: 0.15;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(80px);
+            z-index: 0;
+            animation: breathe 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes breathe {
+            from { transform: translate(-50%, -50%) scale(0.9); opacity: 0.1; }
+            to { transform: translate(-50%, -50%) scale(1.1); opacity: 0.2; }
+        }
+
+        /* Scene Container */
+        .scene {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* The 3D Digital Card */
+        .digital-card {
+            width: 420px;
+            height: 260px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.01));
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transform-style: preserve-3d;
+            box-shadow: 
+                0 30px 60px rgba(0,0,0,0.6),
+                inset 0 0 20px rgba(255,255,255,0.05),
+                0 0 40px calc(var(--theme-color) - 80%); /* Colored shadow */
+            animation: floatUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+            transform: translateY(50px) rotateX(10deg);
+            overflow: hidden;
+        }
+
+        @keyframes floatUp {
+            to { opacity: 1; transform: translateY(0) rotateX(0deg); }
+        }
+
+        /* Holographic Light Sweep */
+        .digital-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+            transform: skewX(-20deg);
+            animation: shine 4s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 200%; }
+            100% { left: 200%; }
+        }
+
+        /* Card Elements */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transform: translateZ(30px); /* Pops out in 3D */
+        }
+
+        .ai-chip {
+            width: 40px; height: 30px;
+            background: repeating-linear-gradient(90deg, #ffd700, #ffd700 2px, transparent 2px, transparent 4px);
+            border-radius: 4px;
+            border: 2px solid #daa520;
+            opacity: 0.8;
+        }
+
+        .status-badge {
+            background: var(--theme-color);
+            color: #000;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px var(--theme-color);
+        }
+
+        .card-body {
+            text-align: left;
+            transform: translateZ(40px); /* Pops out more */
+        }
+
+        .amount-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .amount-value {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            font-family: 'Space Mono', monospace;
+            color: #fff;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            transform: translateZ(20px);
+        }
+
+        .metric {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metric-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--theme-color);
+        }
+
+        /* Action Button */
+        .btn-restart {
+            padding: 16px 36px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--glass-border);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            animation: floatUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .btn-restart:hover {
+            background: var(--text-light);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 500px) {
+            .digital-card {
+                width: 90vw;
+                height: 220px;
+                padding: 20px;
+            }
+            .amount-value { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+
+    <div class="scene">
+        <!-- The Floating 3D Card -->
+        <div class="digital-card" id="hoverCard">
+            
+            <div class="card-header">
+                <div class="ai-chip"></div>
+                <div class="status-badge">{{ prediction }}</div>
+            </div>
+
+            <div class="card-body">
+                <div class="amount-label">Authorized Capital</div>
+                <div class="amount-value" id="displayAmount">₹0</div>
+            </div>
+
+            <div class="card-footer">
+                <div class="metric">
+                    <span class="metric-label">AI Confidence Score</span>
+                    <span class="metric-value">{{ probability }}%</span>
+                </div>
+                <div class="metric" style="text-align: right;">
+                    <span class="metric-label">Network ID</span>
+                    <span class="metric-value" style="color: var(--text-muted);">#{{ range(1000, 9999) | random }}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="/" class="btn-restart">← Initialize New Request</a>
+    </div>
+
+    <script>
+        // 1. Format the Loan Amount into Indian Rupees
+        document.addEventListener("DOMContentLoaded", () => {
+            const rawAmount = parseFloat("{{ loan_amnt }}");
+            if (!isNaN(rawAmount)) {
+                document.getElementById('displayAmount').textContent = '₹' + rawAmount.toLocaleString('en-IN');
+            }
+        });
+
+        // 2. 3D Hover/Tilt Effect
+        const card = document.getElementById('hoverCard');
+        
+        document.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        // Reset transform when mouse leaves the window
+        document.addEventListener('mouseleave', () => {
+            card.style.transition = "transform 0.5s ease";
+            card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+            
+            // Remove transition so it tracks mouse smoothly again when it re-enters
+            setTimeout(() => {
+                card.style.transition = "none";
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>
