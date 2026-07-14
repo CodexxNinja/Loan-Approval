@@ -475,40 +475,41 @@ Loan-Approval/
 ---
 
 ---
+---
 
 <div align="center">
 
-<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
+<img src="YOUR_AUTHORS_HEADER_GIF" width="180"/>
 
 # Authors
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:6C63FF,100:00C9FF&text=Varad%20Paradkar%20%20✦%20%20Durgesh%20Padwal&fontSize=28&fontColor=ffffff&animation=twinkling"/>
-
-<br>
 
 <table>
 <tr>
 
 <td align="center" width="50%">
 
-### Varad Paradkar
+<a href="https://github.com/CodexxNinja">
+<img src="YOUR_ANIMATED_VARAD_NAME_CARD.gif" width="320"/>
+</a>
 
-Machine Learning & Full Stack Developer
+<br><br>
 
 <a href="https://github.com/CodexxNinja">
-<img src="https://img.shields.io/badge/@CodexxNinja-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-@CodexxNinja-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </td>
 
 <td align="center" width="50%">
 
-### Durgesh Padwal
+<a href="https://github.com/Durgesh729">
+<img src="YOUR_ANIMATED_DURGESH_NAME_CARD.gif" width="320"/>
+</a>
 
-Backend & Application Developer
+<br><br>
 
 <a href="https://github.com/Durgesh729">
-<img src="https://img.shields.io/badge/@Durgesh729-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-@Durgesh729-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </td>
