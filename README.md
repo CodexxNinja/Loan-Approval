@@ -1,3 +1,4 @@
+````markdown
 <div align="center">
 
 # Loan Approval Prediction System
@@ -158,7 +159,7 @@ Works seamlessly across desktops, tablets and mobile devices.
 
 # Architecture
 
-
+```mermaid
 flowchart LR
 
 A[User Browser]
@@ -190,7 +191,7 @@ E --> F
 F --> G
 
 G --> H
-
+````
 
 The architecture separates presentation, preprocessing, machine learning inference and result rendering, making the application scalable and maintainable.
 
@@ -465,65 +466,6 @@ Loan-Approval
 <td align="center">
 
 <img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="300">
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-<table>
-
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/QBd2kLB5qDmysEXre9/giphy.gif" width="300">
-
-</td>
-
-<td>
-
-# Screenshots
-
-| Home           | Prediction     | Result         |
-| -------------- | -------------- | -------------- |
-| Add Screenshot | Add Screenshot | Add Screenshot |
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-<table>
-
-<tr>
-
-<td width="58%">
-
-# Future Enhancements
-
-* XGBoost Integration
-* LightGBM Comparison
-* Explainable AI using SHAP
-* LIME Visualization
-* Docker Support
-* AWS Deployment
-* Render Deployment
-* User Authentication
-* Loan History Dashboard
-* Model Monitoring
-
-</td>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" width="300">
 
 </td>
 
