@@ -158,7 +158,7 @@ Works seamlessly across desktops, tablets and mobile devices.
 
 # Architecture
 
-```mermaid
+
 flowchart LR
 
 A[User Browser]
@@ -190,7 +190,7 @@ E --> F
 F --> G
 
 G --> H
-````
+
 
 The architecture separates presentation, preprocessing, machine learning inference and result rendering, making the application scalable and maintainable.
 
@@ -555,7 +555,7 @@ GitHub: https://github.com/CodexxNinja
 
 ### Durgesh Padwal
 
-GitHub: *(Add Profile Link)*
+GitHub: https://github.com/Durgesh729
 
 </td>
 
@@ -563,45 +563,3 @@ GitHub: *(Add Profile Link)*
 
 </table>
 
----
-
-<table>
-
-<tr>
-
-<td width="58%">
-
-# License
-
-This project is licensed under the **MIT License**.
-
-Feel free to use, modify and distribute this project while providing appropriate credit.
-
-</td>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/3o7TKTDn976rzVgky4/giphy.gif" width="280">
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-<table>
-
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif" width="300">
-
-</td>
-
-</tr>
-
-</table>
-```
