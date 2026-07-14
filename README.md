@@ -256,49 +256,68 @@ The architecture separates presentation, preprocessing, machine learning inferen
 
 ---
 
-<table>
+---
 
-<tr>
+<div align="center">
 
-<td width="58%">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2x4cnI5b2Q4dXd2aTR6MWh5aHZlYmx2bTR3YWg4bTFzcDR2aDVhYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LmNwrBhejkK9EFP504/giphy.gif" width="180"/>
 
 # Dataset
 
-The predictive model is trained using important financial and credit-risk indicators.
+The machine learning model is trained on carefully selected financial and credit-risk attributes to accurately determine an applicant's loan eligibility.
 
-| Feature               | Type        |
-| --------------------- | ----------- |
-| Age                   | Numerical   |
-| Income                | Numerical   |
-| Home Ownership        | Categorical |
-| Employment Length     | Numerical   |
-| Loan Intent           | Categorical |
-| Loan Amount           | Numerical   |
-| Interest Rate         | Numerical   |
-| Loan Grade            | Categorical |
-| Credit History Length | Numerical   |
-| Historical Default    | Categorical |
+</div>
 
-These features undergo preprocessing including:
+<br>
 
-* Missing Value Handling
-* Feature Encoding
-* Feature Scaling
-* Model Inference
+| Feature | Data Type | Description |
+|:--------|:---------:|:------------|
+| **Age** | Numerical | Applicant's age |
+| **Income** | Numerical | Annual income |
+| **Home Ownership** | Categorical | Housing status (Own, Rent, Mortgage) |
+| **Employment Length** | Numerical | Years of employment |
+| **Loan Intent** | Categorical | Purpose of the loan |
+| **Loan Amount** | Numerical | Requested loan amount |
+| **Interest Rate** | Numerical | Loan interest rate |
+| **Loan Grade** | Categorical | Risk grade (A–G) |
+| **Credit History Length** | Numerical | Years of credit history |
+| **Historical Default** | Categorical | Previous loan default (Yes/No) |
 
-</td>
+<br>
 
-<td align="center">
+<div align="center">
 
-<img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="300">
+### Data Preprocessing Pipeline
 
-</td>
+```text
+Raw Dataset
+      │
+      ▼
+Missing Value Handling
+      │
+      ▼
+Categorical Encoding
+      │
+      ▼
+Feature Scaling
+      │
+      ▼
+Feature Selection
+      │
+      ▼
+Random Forest Classifier
+```
 
-</tr>
+</div>
 
-</table>
+<div align="center">
+
+> **High-quality preprocessing ensures accurate, consistent, and reliable loan approval predictions.**
+
+</div>
 
 ---
+
 ---
 
 <div align="center">
@@ -389,8 +408,6 @@ Open in Browser 🚀
 
 ---
 
----
----
 
 <div align="center">
 
