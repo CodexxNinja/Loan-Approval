@@ -472,41 +472,48 @@ Loan-Approval/
 ├── requirements.txt
 └── README.md
 ```
+---
 
 <div align="center">
 
-> **Clean • Modular • Easy to Maintain • Production Ready**
-
-</div>
-
----
-<table>
-
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif" width="280">
-
-</td>
-
-<td>
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
 
 # Authors
 
+Meet the developers behind the **Loan Approval Prediction System**.
+
+<br>
+
+<table>
+<tr>
+
+<td align="center" width="50%">
+
 ### Varad Paradkar
 
-GitHub: https://github.com/CodexxNinja
+Machine Learning & Full Stack Developer
 
----
+<a href="https://github.com/CodexxNinja">
+<img src="https://img.shields.io/badge/GitHub-CodexxNinja-181717?style=for-the-badge&logo=github"/>
+</a>
+
+</td>
+
+<td align="center" width="50%">
 
 ### Durgesh Padwal
 
-GitHub: https://github.com/Durgesh729
+Backend & Application Developer
+
+<a href="https://github.com/Durgesh729">
+<img src="https://img.shields.io/badge/GitHub-Durgesh729-181717?style=for-the-badge&logo=github"/>
+</a>
 
 </td>
 
 </tr>
-
 </table>
 
+</div>
+
+---
