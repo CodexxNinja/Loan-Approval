@@ -501,7 +501,7 @@ AIML Engineer
 
 ### Durgesh Padwal
 
-Backend & Application Developer
+AIML Developer
 
 <a href="https://github.com/Durgesh729">
 <img src="https://img.shields.io/badge/GitHub-Durgesh729-181717?style=for-the-badge&logo=github"/>
