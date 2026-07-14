@@ -401,36 +401,55 @@ Workflow
 
 </table>
 
+
 ---
 
-<table>
+<div align="center">
 
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" width="300">
-
-</td>
-
-<td>
+<img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="180"/>
 
 # API Endpoints
 
-| Method | Endpoint | Description           |
-| ------ | -------- | --------------------- |
-| GET    | /        | Application Home      |
-| POST   | /predict | Predict Loan Approval |
-| GET    | /docs    | Swagger Documentation |
-| GET    | /redoc   | ReDoc Documentation   |
+Interact with the **FastAPI** backend through the following endpoints.
 
-</td>
+<br>
 
-</tr>
+| Method | Endpoint | Description |
+|:------:|:--------:|-------------|
+| **GET** | `/` | Serves the Loan Application interface |
+| **POST** | `/predict` | Predicts loan approval using the trained ML model |
+| **GET** | `/docs` | Interactive Swagger API Documentation |
+| **GET** | `/redoc` | Alternative ReDoc API Documentation |
 
-</table>
+<br>
 
----
+### API Workflow
+
+```text
+Client
+   │
+   ▼
+POST /predict
+   │
+   ▼
+FastAPI Backend
+   │
+   ▼
+Preprocessing Pipeline
+   │
+   ▼
+Random Forest Model
+   │
+   ▼
+Prediction + Probability
+   │
+   ▼
+JSON Response
+```
+
+</div>
+
+
 ---
 
 <div align="center">
