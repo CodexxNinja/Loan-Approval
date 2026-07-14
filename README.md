@@ -515,7 +515,6 @@ Display Approval / Rejection Result
 </div>
 
 ---
----
 
 <div align="center">
 
