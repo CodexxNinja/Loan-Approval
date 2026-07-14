@@ -58,195 +58,75 @@ Key Highlights:
 
 ---
 
-<table>
-<tr>
+<div align="center">
 
-<td align="center">
-
-<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="280">
-
-</td>
-
-<td width="60%">
+<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="180"/>
 
 # Features
 
-<table>
-
-<tr>
-
-<td align="center" width="33%">
-
-<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="120"><br>
-
-## Intelligent Prediction
-
-Optimized Random Forest model predicts loan approvals with confidence probability.
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="120"><br>
-
-## Multi-Step Application
-
-Smooth and responsive loan application workflow with validation.
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="120"><br>
-
-## Real-Time Processing
-
-Automatic preprocessing, encoding, scaling and instant inference.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="120"><br>
-
-## FastAPI Backend
-
-High-performance asynchronous REST API with Swagger documentation.
-
-</td>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="120"><br>
-
-## Beautiful Result Screen
-
-Animated approval and rejection dashboard with contextual recommendations.
-
-</td>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="120"><br>
-
-## Responsive UI
-
-Works seamlessly across desktops, tablets and mobile devices.
-
-</td>
-
-</tr>
-
-</table>
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-<table>
-
-<tr>
-
-<td width="58%">
-
-# Architecture
-
-```mermaid
-flowchart LR
-
-A[User Browser]
-
-B[Multi-Step HTML Interface]
-
-C[JavaScript Validation]
-
-D[FastAPI Backend]
-
-E[Preprocessing Pipeline]
-
-F[Random Forest Model]
-
-G[Prediction]
-
-H[Result Dashboard]
-
-A --> B
-
-B --> C
-
-C --> D
-
-D --> E
-
-E --> F
-
-F --> G
-
-G --> H
-````
-
-The architecture separates presentation, preprocessing, machine learning inference and result rendering, making the application scalable and maintainable.
-
-</td>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="320">
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-<table>
-
-<tr>
-
-<td align="center">
-
-<img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="320">
-
-</td>
-
-<td>
-
-# Tech Stack
-
-<div align="center">
-
-### Languages & Frameworks
-
-<img src="https://skillicons.dev/icons?i=python,fastapi,html,css,js"/>
-
-### Machine Learning
-
-<img src="https://skillicons.dev/icons?i=sklearn"/>
-
-### Tools
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode"/>
+Explore the key capabilities of the **Loan Approval Prediction System**, designed for accurate predictions, seamless user experience, and high-performance machine learning inference.
 
 </div>
 
-| Component           | Technology               |
-| ------------------- | ------------------------ |
-| Backend             | FastAPI                  |
-| Machine Learning    | Random Forest Classifier |
-| Data Processing     | Pandas, NumPy            |
-| Model Serialization | Joblib                   |
-| Templates           | Jinja2                   |
-| Frontend            | HTML5, CSS3, JavaScript  |
+<br>
+
+<table>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Intelligent Prediction
+
+Predicts loan approval using an optimized **Random Forest Classifier**, delivering accurate results with confidence probabilities.
+
+</td>
+
+<td width="50%" valign="top">
+
+### Multi-Step Application
+
+Guides users through a clean, responsive, and intuitive multi-step loan application process.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Automated Data Processing
+
+Handles missing values, categorical encoding, feature scaling, and preprocessing before inference.
+
+</td>
+
+<td width="50%" valign="top">
+
+### High-Performance FastAPI Backend
+
+Provides fast, asynchronous prediction APIs with interactive Swagger documentation.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### Dynamic Result Dashboard
+
+Displays approval or rejection results along with prediction confidence in a modern interface.
+
+</td>
+
+<td width="50%" valign="top">
+
+### Responsive User Experience
+
+Optimized for desktops, tablets, and mobile devices with a clean and consistent interface.
 
 </td>
 
@@ -254,7 +134,182 @@ The architecture separates presentation, preprocessing, machine learning inferen
 
 </table>
 
+<br>
+
+<div align="center">
+
+### Feature Workflow
+
+```text
+User Input
+     │
+     ▼
+Data Validation
+     │
+     ▼
+Preprocessing Pipeline
+     │
+     ▼
+Random Forest Prediction
+     │
+     ▼
+Confidence Score
+     │
+     ▼
+Result Dashboard
+```
+
+</div>
+
+
+------
+
+<div align="center">
+
+<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="180"/>
+
+# Architecture
+
+The Loan Approval Prediction System follows a modular architecture that separates the presentation layer, backend services, preprocessing pipeline, and machine learning model to ensure scalability, maintainability, and efficient inference.
+
+</div>
+
+<br>
+
+```mermaid
+flowchart TD
+
+    A[User]
+
+    B[Multi-Step Web Interface<br/>HTML • CSS • JavaScript]
+
+    C[FastAPI Backend]
+
+    D[Data Preprocessing<br/>Encoding • Scaling • Validation]
+
+    E[Random Forest Classifier]
+
+    F[Prediction Probability]
+
+    G[Loan Decision]
+
+    H[Result Dashboard]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+```
+
+<div align="center">
+
+### System Workflow
+
+```text
+User
+ │
+ ▼
+Multi-Step Application Form
+ │
+ ▼
+FastAPI Backend
+ │
+ ▼
+Data Preprocessing
+ │
+ ▼
+Random Forest Classifier
+ │
+ ▼
+Probability Prediction
+ │
+ ▼
+Approval / Rejection
+ │
+ ▼
+Result Dashboard
+```
+
+</div>
+
+<div align="center">
+
+> **The architecture cleanly separates the user interface, API layer, preprocessing pipeline, and machine learning model, resulting in a scalable, maintainable, and production-ready application.**
+
+</div>
+
 ---
+
+<div align="center">
+
+<img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="180"/>
+
+# Tech Stack
+
+The project is built using a modern technology stack for **Machine Learning**, **Backend Development**, and **Frontend Engineering**.
+
+<br>
+
+### Languages & Frameworks
+
+<img src="https://skillicons.dev/icons?i=python,fastapi,html,css,js" />
+
+<br><br>
+
+### Machine Learning
+
+<img src="https://skillicons.dev/icons?i=sklearn" />
+
+<br><br>
+
+### Tools & Development
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode" />
+
+</div>
+
+<br>
+
+| Category | Technology |
+|:---------|:-----------|
+| **Programming Language** | Python 3.10+ |
+| **Backend Framework** | FastAPI |
+| **Machine Learning** | Random Forest Classifier (Scikit-Learn) |
+| **Data Processing** | Pandas, NumPy |
+| **Model Serialization** | Joblib |
+| **Template Engine** | Jinja2 |
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Version Control** | Git & GitHub |
+| **IDE** | Visual Studio Code |
+
+<div align="center">
+
+### Technology Workflow
+
+```text
+Python
+   │
+   ▼
+FastAPI
+   │
+   ▼
+Data Preprocessing
+   │
+   ▼
+Random Forest Model
+   │
+   ▼
+Prediction API
+   │
+   ▼
+Responsive Web Interface
+```
+
+</div>
+
 
 ---
 
@@ -290,25 +345,25 @@ The predictive model is trained on carefully selected financial and credit-risk 
 ### Data Processing Pipeline
 
 ```text
-📄 Raw Dataset
+   Raw Dataset
         │
         ▼
-🧹 Missing Value Handling
+ Missing Value Handling
         │
         ▼
-🔤 Categorical Encoding
+ Categorical Encoding
         │
         ▼
-📊 Feature Scaling
+ Feature Scaling
         │
         ▼
-🎯 Feature Selection
+ Feature Selection
         │
         ▼
-🌲 Random Forest Model
+ Random Forest Model
         │
         ▼
-✅ Loan Approval Prediction
+ Loan Approval Prediction
 ```
 
 </div>
