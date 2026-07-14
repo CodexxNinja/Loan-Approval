@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="220"/>
+<img src="YOUR_LONG_HORIZONTAL_GIPHY_GIF" width="100%"/>
 
 # Loan Approval Prediction System
 
@@ -10,18 +10,17 @@ A modern end-to-end Machine Learning application that predicts loan approval dec
 
 <br>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Random%20Forest-228B22?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-1E90FF?style=for-the-badge"/>
+<p>
+<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
+<img src="https://img.shields.io/badge/Random%20Forest-228B22?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-1E90FF?style=for-the-badge"/>
 </p>
 
 </div>
 
 ---
-
 <table>
 <tr>
 
