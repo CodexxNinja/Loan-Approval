@@ -363,45 +363,60 @@ uvicorn app:app --reload
 </table>
 
 ---
+---
 
-<table>
+<div align="center">
 
-<tr>
-
-<td width="58%">
+<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="180"/>
 
 # Usage
 
-Once the server is running, access:
+Run the application locally and access the following resources.
 
-| Resource      | URL                         |
-| ------------- | --------------------------- |
-| Web Interface | http://127.0.0.1:8000       |
-| Swagger UI    | http://127.0.0.1:8000/docs  |
-| ReDoc         | http://127.0.0.1:8000/redoc |
+<br>
 
-Workflow
+| Resource | URL |
+|:---------|:----|
+| **Web Interface** | `http://127.0.0.1:8000` |
+| **Swagger UI** | `http://127.0.0.1:8000/docs` |
+| **ReDoc** | `http://127.0.0.1:8000/redoc` |
 
-1. Fill applicant details.
-2. Submit the form.
-3. Backend preprocesses the data.
-4. Random Forest predicts the result.
-5. Probability score is generated.
-6. Beautiful verdict page is displayed.
+</div>
 
-</td>
+<br>
 
-<td align="center">
+<div align="center">
 
-<img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="300">
+### Application Workflow
 
-</td>
+```text
+Start Application
+        │
+        ▼
+Open Web Interface
+        │
+        ▼
+Fill Loan Application
+        │
+        ▼
+Submit Details
+        │
+        ▼
+Data Preprocessing
+        │
+        ▼
+Random Forest Prediction
+        │
+        ▼
+Generate Probability Score
+        │
+        ▼
+Display Approval / Rejection Result
+```
 
-</tr>
+</div>
 
-</table>
-
-
+---
 ---
 
 <div align="center">
