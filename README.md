@@ -431,27 +431,39 @@ Workflow
 </table>
 
 ---
+---
 
-<table>
+<div align="center">
 
-<tr>
-
-<td width="58%">
+<img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="180"/>
 
 # Project Structure
 
+Explore the organized folder hierarchy of the Loan Approval Prediction System.
+
+</div>
+
+<br>
+
 ```text
-Loan-Approval
+Loan-Approval/
 │
-├── dataset
+├── dataset/
+│   └── loan_data.csv
 │
-├── models
+├── models/
+│   └── random_forest_model.joblib
 │
-├── static
-│   ├── css
-│   └── js
+├── static/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── result.css
+│   │
+│   └── js/
+│       ├── form.js
+│       └── validation.js
 │
-├── templates
+├── templates/
 │   ├── index.html
 │   └── result.html
 │
@@ -461,20 +473,13 @@ Loan-Approval
 └── README.md
 ```
 
-</td>
+<div align="center">
 
-<td align="center">
+> **Clean • Modular • Easy to Maintain • Production Ready**
 
-<img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif" width="300">
-
-</td>
-
-</tr>
-
-</table>
+</div>
 
 ---
-
 <table>
 
 <tr>
